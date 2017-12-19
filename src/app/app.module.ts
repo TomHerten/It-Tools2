@@ -1,30 +1,76 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { NgModule, ErrorHandler } from '@angular/core';
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { MyApp } from './app.component';
+import { HttpModule } from '@angular/http';
+
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
-import { MyApp } from './app.component';
+import { AuthProvider } from '../providers/auth/auth';
 import { HomePage } from '../pages/home/home';
+import { LoginPage } from '../pages/login/login';
+import { SignupPage } from '../pages/signup/signup';
+import { ResetPasswordPage } from '../pages/reset-password/reset-password';
+import { Vibration } from '@ionic-native/vibration';
+import { Geolocation } from '@ionic-native/geolocation';
+import { MapPage } from '../pages/map/map';
+import { ListPage } from '../pages/list/list';
+import { LocationsProvider } from '../providers/locations/locations';
+import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
+import { ConnectivityProvider } from '../providers/connectivity/connectivity';
+
+// Importing AF2 Module
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+// AF2 Settings
+const firebaseConfig = {
+  apiKey: "AIzaSyBFeSEzICHWv934dGM46f1XzdluULKiT7Q",
+  authDomain: "ionic-test-75b21.firebaseapp.com",
+  databaseURL: "https://ionic-test-75b21.firebaseio.com",
+  projectId: "ionic-test-75b21",
+  storageBucket: "ionic-test-75b21.appspot.com",
+  messagingSenderId: "281623706110"
+};
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SignupPage,
+    ResetPasswordPage,
+    MapPage,
+    ListPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    HttpModule,
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SignupPage,
+    ResetPasswordPage,
+    MapPage,
+    ListPage
   ],
   providers: [
-    StatusBar,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    StatusBar, 
+    AuthProvider,
+    Vibration,
+    Geolocation,
+    LocationsProvider, 
+    GoogleMapsProvider, 
+    ConnectivityProvider
   ]
 })
 export class AppModule {}

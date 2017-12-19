@@ -1,4 +1,21 @@
+
 <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+      <button ion-button (click)="logout()"><ion-icon name="undo"></ion-icon>Logout</button>
+    </ion-buttons> 
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <div #map id="map"></div> 
+</ion-content>
+
+<!--<ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
@@ -11,4 +28,12 @@
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
-</ion-content>
+
+  <button class="default" (click)="Logout()">Logout</button>
+
+  <ion-tabs color="light">
+    <ion-tab [root]="tab1Root" tabTitle="Map" tabIcon="navigate"></ion-tab>
+    <ion-tab [root]="tab2Root" tabTitle="List" tabIcon="list"></ion-tab>
+  </ion-tabs>
+
+</ion-content>-->
