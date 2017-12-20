@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 import { LocationsProvider } from '../../providers/locations/locations';
-
-/**
- * Generated class for the ListPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 
 @Component({
   selector: 'page-list',
@@ -19,7 +12,9 @@ export class ListPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ListPage');
+
+    this.locations.load();
+    
   }
 
 }

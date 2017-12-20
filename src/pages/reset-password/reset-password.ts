@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, AlertController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { AuthProvider } from '../../providers/auth/auth';
 import { EmailValidator } from '../../validators/email';
@@ -26,11 +26,11 @@ public resetPasswordForm:FormGroup;
       this.authData.resetPassword(this.resetPasswordForm.value.email)
       .then((user) => {
         let alert = this.alertCtrl.create({
-          message: "We just sent you a reset link to your email",
+          message: "We hebben u een link gestuurd om uw wachtwoord te resetten.",
           buttons: [
             {
               text: "Ok",
-              role: 'cancel',
+              role: 'annuleer',
               handler: () => {
                 this.nav.pop();
               }
@@ -45,7 +45,7 @@ public resetPasswordForm:FormGroup;
           buttons: [
             {
               text: "Ok",
-              role: 'cancel'
+              role: 'annuleer'
             }
           ]
         });

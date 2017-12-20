@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HttpModule } from '@angular/http';
+
 
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -12,11 +12,11 @@ import { LoginPage } from '../pages/login/login';
 import { SignupPage } from '../pages/signup/signup';
 import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 import { Vibration } from '@ionic-native/vibration';
+import { Screenshot } from '@ionic-native/screenshot';
 import { Geolocation } from '@ionic-native/geolocation';
-import { MapPage } from '../pages/map/map';
+import { HttpModule } from '@angular/http';
 import { ListPage } from '../pages/list/list';
 import { LocationsProvider } from '../providers/locations/locations';
-import { GoogleMapsProvider } from '../providers/google-maps/google-maps';
 import { ConnectivityProvider } from '../providers/connectivity/connectivity';
 
 // Importing AF2 Module
@@ -41,7 +41,6 @@ const firebaseConfig = {
     LoginPage,
     SignupPage,
     ResetPasswordPage,
-    MapPage,
     ListPage
   ],
   imports: [
@@ -58,7 +57,6 @@ const firebaseConfig = {
     LoginPage,
     SignupPage,
     ResetPasswordPage,
-    MapPage,
     ListPage
   ],
   providers: [
@@ -68,8 +66,8 @@ const firebaseConfig = {
     AuthProvider,
     Vibration,
     Geolocation,
+    Screenshot,
     LocationsProvider, 
-    GoogleMapsProvider, 
     ConnectivityProvider
   ]
 })

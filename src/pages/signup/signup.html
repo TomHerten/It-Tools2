@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      Create an Account
+      Maak een gebruiker
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,8 +11,8 @@
   <form [formGroup]="signupForm" (submit)="signupUser()" novalidate>
 
     <ion-item>
-      <ion-label stacked>Email</ion-label>
-      <ion-input formControlName="email" type="email" placeholder="Your email address"
+      <ion-label stacked>E-mail</ion-label>
+      <ion-input formControlName="email" type="email" placeholder="Uw e-mailadres"
         [class.invalid]="!signupForm.controls.email.valid && signupForm.controls.email.dirty"></ion-input>
     </ion-item>
     <ion-item class="error-message" *ngIf="!signupForm.controls.email.valid  && signupForm.controls.email.dirty">
@@ -20,8 +20,8 @@
     </ion-item>
 
     <ion-item>
-      <ion-label stacked>Password</ion-label>
-      <ion-input formControlName="password" type="password"  placeholder="Your password"
+      <ion-label stacked>Wachtwoord</ion-label>
+      <ion-input formControlName="password" type="password"  placeholder="Uw passwoord"
         [class.invalid]="!signupForm.controls.password.valid && signupForm.controls.password.dirty"></ion-input>
     </ion-item>
     <ion-item class="error-message" *ngIf="!signupForm.controls.password.valid  && signupForm.controls.password.dirty">
@@ -29,7 +29,7 @@
     </ion-item>
 
     <button ion-button block type="submit">
-      Create an Account
+      Maak uw gebruiker
     </button>
 
   </form>

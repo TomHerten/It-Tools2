@@ -1,18 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Geolocation } from '@ionic-native/geolocation';
 import 'rxjs/add/operator/map';
 
-/*
-  Generated class for the LocationsProvider provider.
-  See https://angular.io/docs/ts/latest/guide/dependency-injection.html
-  for more info on providers and Angular DI.
-*/
 @Injectable()
 export class LocationsProvider {
 
   data: any;
 
-  constructor(public http: Http) {
+  constructor(public http: Http, public geolocation: Geolocation) {
 
   }
 
@@ -24,27 +20,32 @@ export class LocationsProvider {
 
     return new Promise(resolve => {
 
-      this.http.get('assets/data/locations.json').map(res => res.json()).subscribe(data => {
+      this.http.get('assets/data/locations.json').map(res => res.json()).subscribe(data2 => {
+          console.log(data2);
 
-        this.data = this.applyHaversine(data.locations);
+          this.geolocation.getCurrentPosition().then((position) => {
+            let usersLocation = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
 
-        this.data.sort((locationA, locationB) => {
-          return locationA.distance - locationB.distance;
-        });
+            this.data = this.applyHaversine(data2.locations, usersLocation);
 
-        resolve(this.data);
+            this.data.sort((locationA, locationB) => {
+              return locationA.distance - locationB.distance;
+            });
+
+            resolve(this.data);
+          }, (err) => {
+            console.log(err);
+          });
       });
 
     });
 
   }
 
-  applyHaversine(locations) {
-
-    let usersLocation = {
-      lat: 40.713744,
-      lng: -74.009056
-    };
+  applyHaversine(locations, usersLocation) {
 
     locations.map((location) => {
 
@@ -56,11 +57,12 @@ export class LocationsProvider {
       location.distance = this.getDistanceBetweenPoints(
         usersLocation,
         placeLocation,
-        'miles'
+        'km'
       ).toFixed(2);
     });
 
     return locations;
+
   }
 
   getDistanceBetweenPoints(start, end, units) {
@@ -70,7 +72,7 @@ export class LocationsProvider {
       km: 6371
     };
 
-    let R = earthRadius[units || 'miles'];
+    let R = earthRadius[units || 'km'];
     let lat1 = start.lat;
     let lon1 = start.lng;
     let lat2 = end.lat;
@@ -90,6 +92,9 @@ export class LocationsProvider {
   }
 
   toRad(x) {
+
     return x * Math.PI / 180;
+
   }
+
 }
