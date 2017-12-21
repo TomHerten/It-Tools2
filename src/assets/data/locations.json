@@ -3,9 +3,134 @@
         [
             {
                 "title": "Thuis",
-                "latitude": 50.949508,
-                "longitude": 5.340911
+                "latitude": 50.949194,
+                "longitude": 5.341027
+            },
+            {
+                "title": "'t Stamineeke",
+                "latitude": 50.944932,
+                "longitude": 5.348298
+            },
+            {
+                "title": "Cambrinus",
+                "latitude": 50.932286,
+                "longitude": 5.334709
+            },
+            {
+                "title": "Shanti Beans",
+                "latitude": 50.932355,
+                "longitude": 5.335531
+            },
+            {
+                "title": "De Witte Non",
+                "latitude": 50.933279,
+                "longitude": 5.339834
+            },
+            {
+                "title": "De Egel",
+                "latitude": 50.932099,
+                "longitude": 5.339764
+            },
+            {
+                "title": "Mucho Gusto",
+                "latitude": 50.931679,
+                "longitude": 5.339835
+            },
+            {
+                "title": "Coffee Cafe Hasselt",
+                "latitude": 50.931748,
+                "longitude": 5.340926
+            },
+            {
+                "title": "Café Export",
+                "latitude": 50.932128,
+                "longitude": 5.342406
+            },
+            {
+                "title": "Koestal",
+                "latitude": 50.932060,
+                "longitude": 5.342426
+            },
+            {
+                "title": "Kafee Vangogh",
+                "latitude": 50.931962,
+                "longitude": 5.342531
+            },
+            {
+                "title": "Café Café",
+                "latitude": 50.931151,
+                "longitude": 5.342449
+            },
+            {
+                "title": "Regenbooghuis Limburg",
+                "latitude": 50.931193,
+                "longitude": 5.342234
+            },
+            {
+                "title": "Olé Olé",
+                "latitude": 50.930643,
+                "longitude": 5.334692
+            },
+            {
+                "title": "Sweet Coffee",
+                "latitude": 50.930419,
+                "longitude": 5.338798
+            },
+            {
+                "title": "Poeskaffee",
+                "latitude": 50.930409,
+                "longitude": 5.339152
+            },
+            {
+                "title": "Het Dwaallicht",
+                "latitude": 50.930318,
+                "longitude": 5.339256
+            },
+            {
+                "title": "Florian",
+                "latitude": 50.930227,
+                "longitude": 5.338757
+            },
+            {
+                "title": "The Irish Times Pub",
+                "latitude": 50.929990,
+                "longitude": 5.339239
+            },
+            {
+                "title": "'t Hemelrijk",
+                "latitude": 50.930212,
+                "longitude": 5.339903
+            },
+            {
+                "title": "De Markt",
+                "latitude": 50.929553,
+                "longitude": 5.337714
+            },
+            {
+                "title": "In De Kleine Hal",
+                "latitude": 50.929396,
+                "longitude": 5.340143
+            },
+            {
+                "title": "KingKongCoffee",
+                "latitude": 50.929475,
+                "longitude": 5.340251
+            },
+            {
+                "title": "Sweet Coffee Take-Away",
+                "latitude": 50.927895,
+                "longitude": 5.336575
+            },
+            {
+                "title": "Den Drossaerd",
+                "latitude": 50.931674,
+                "longitude": 5.347069
+            },
+            {
+                "title": "Fitlink",
+                "latitude": 50.930705,
+                "longitude": 5.397297
             }
-            
+
         ]
 }

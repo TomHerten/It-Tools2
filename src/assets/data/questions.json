@@ -1,0 +1,246 @@
+{
+    "questions": [
+ 
+        {
+            "flashCardFront": "<img src='assets/imgs/geuze.jpg' />",
+            "flashCardBack": "Oude",
+            "flashCardFlipped": false,
+            "questionText": "Welk voorvoegsel staat er voor de traditionele geuze?",
+            "answers": [
+                {"answer": "Oude", "correct": true, "selected": false},
+                {"answer": "Echte", "correct": false, "selected": false},
+                {"answer": "Artisanale", "correct": false, "selected": false},
+                {"answer": "Archaïsche", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/oktoberfest.jpg' />",
+            "flashCardBack": "München",
+            "flashCardFlipped": false,
+            "questionText": "Waar worden jaarlijks de wereldberoemde Oktoberfeste gehouden?",
+            "answers": [
+                {"answer": "Eupen", "correct": false, "selected": false},
+                {"answer": "Sint-Eloois-Vijve", "correct": false, "selected": false},
+                {"answer": "Keulen", "correct": false, "selected": false},
+                {"answer": "München", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/pils.jpg' />",
+            "flashCardBack": "Tsjechië",
+            "flashCardFlipped": false,
+            "questionText": "In welk land werd de pils uitgevonden?",
+            "answers": [
+                {"answer": "Duitsland", "correct": false, "selected": false},
+                {"answer": "België", "correct": false, "selected": false},
+                {"answer": "Tsjechië", "correct": true, "selected": false},
+                {"answer": "Verenigde Arabische Emiraten", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/polen.jpg' />",
+            "flashCardBack": "4,8 liter",
+            "flashCardFlipped": false,
+            "questionText": "Hoeveel bedroeg het dagelijkse rantsoen bier dat een lid van het koninklijk hof in Polen in de 16e eeuw kreeg?",
+            "answers": [
+                {"answer": "niets", "correct": false, "selected": false},
+                {"answer": "48 cl", "correct": false, "selected": false},
+                {"answer": "4,8 liter", "correct": true, "selected": false},
+                {"answer": "48 liter ", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/trapist.jpg' />",
+            "flashCardBack": "7",
+            "flashCardFlipped": false,
+            "questionText": "Hoeveel echte brouwerijen van trappistenbier zijn er?",
+            "answers": [
+                {"answer": "5", "correct": false, "selected": false},
+                {"answer": "6", "correct": false, "selected": false},
+                {"answer": "7", "correct": true, "selected": false},
+                {"answer": "8", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/abdij.jpg' />",
+            "flashCardBack": "een non",
+            "flashCardFlipped": false,
+            "questionText": "Wat staat er op het etiket van abdijbier Capucine?",
+            "answers": [
+                {"answer": "een non", "correct": true, "selected": false},
+                {"answer": "vijf dikke, bierdrinkende paters", "correct": false, "selected": false},
+                {"answer": "een capucijnaapje", "correct": false, "selected": false},
+                {"answer": "de kont van een geit", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/leuven.jpg' />",
+            "flashCardBack": "de Oude Markt in Leuven",
+            "flashCardFlipped": false,
+            "questionText": "Welke Vlaamse Locatie staat bekend als “De langste toog ter wereld”?",
+            "answers": [
+                {"answer": "Het stationsbuffet in Leuven", "correct": false, "selected": false},
+                {"answer": "de Muntstraat in Leuven", "correct": false, "selected": false},
+                {"answer": "de Oude Markt in Leuven", "correct": true, "selected": false},
+                {"answer": "het Hogeschoolplein in Leuven", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/heineken.png' />",
+            "flashCardBack": "Fayrouz",
+            "flashCardFlipped": false,
+            "questionText": "Hoe heet het alcoholvrije moslimbier van Heineken?",
+            "answers": [
+                {"answer": "Al Ahram", "correct": false, "selected": false},
+                {"answer": "Fayrouz", "correct": true, "selected": false},
+                {"answer": "Salamu", "correct": false, "selected": false},
+                {"answer": "Al Azhar", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/duvel.jpg' />",
+            "flashCardBack": "Nederland",
+            "flashCardFlipped": false,
+            "questionText": "Naar welk land wordt Duvel het meest geëxporteerd?",
+            "answers": [
+                {"answer": "Japan", "correct": false, "selected": false},
+                {"answer": "Verenigde Staten", "correct": false, "selected": false},
+                {"answer": "Nederland", "correct": true, "selected": false},
+                {"answer": "Australië", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/wittekerke.jpg' />",
+            "flashCardBack": "Wittekerke",
+            "flashCardFlipped": false,
+            "questionText": "Naar welke populaire tv-serie werd een witbier genoemd?",
+            "answers": [
+                {"answer": "Wittekerke", "correct": true, "selected": false},
+                {"answer": "Thuis", "correct": false, "selected": false},
+                {"answer": "De Kotmadam", "correct": false, "selected": false},
+                {"answer": "Witse", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/billy.jpg' />",
+            "flashCardBack": "Billy",
+            "flashCardFlipped": false,
+            "questionText": "Hoe heet de broer van de voormalige Amerikaanse president Jimmy Carter die de reputatie had om constant ladderzat rond te lopen?",
+            "answers": [
+                {"answer": "Willy", "correct": false, "selected": false},
+                {"answer": "Billy", "correct": true, "selected": false},
+                {"answer": "Ricky", "correct": false, "selected": false},
+                {"answer": "Boris", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/baantjer.jpg' />",
+            "flashCardBack": "Café Lowietje",
+            "flashCardFlipped": false,
+            "questionText": "Hoe heet het café in de Nederlandse detectiveserie Baantjer?",
+            "answers": [
+                {"answer": "Café Lowietje", "correct": true, "selected": false},
+                {"answer": "Het zwarte Schaap", "correct": false, "selected": false},
+                {"answer": "De Klokkentoren", "correct": false, "selected": false},
+                {"answer": "Den Delper", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/betty.jpg' />",
+            "flashCardBack": "“Vergrijp je aan Betty”",
+            "flashCardFlipped": false,
+            "questionText": " Hoe luidde de reclameslogan voor het bier Betty’s Blond?",
+            "answers": [
+                {"answer": "“Borsten. Bier. Betty”", "correct": false, "selected": false},
+                {"answer": "“Vergrijp je aan Betty”", "correct": true, "selected": false},
+                {"answer": "“Betty, open u”", "correct": false, "selected": false},
+                {"answer": "“Effen beffen, Betty”", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/bezinksel.jpg' />",
+            "flashCardBack": "gist",
+            "flashCardFlipped": false,
+            "questionText": "Waaruit bestaat het bezinksel van bier dat nagist op de fles?",
+            "answers": [
+                {"answer": "gist", "correct": true, "selected": false},
+                {"answer": "mout", "correct": false, "selected": false},
+                {"answer": "suiker", "correct": false, "selected": false},
+                {"answer": "neuskeutels", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/celis.jpg' />",
+            "flashCardBack": "Celis White",
+            "flashCardFlipped": false,
+            "questionText": "Hoe heet het tarwebier dat Hoegaarden-brouwer Pierre Celis in Amerika lanceerde?",
+            "answers": [
+                {"answer": "Hoegaarden U.S.", "correct": false, "selected": false},
+                {"answer": "Celis White", "correct": true, "selected": false},
+                {"answer": "White love from Belgium", "correct": false, "selected": false},
+                {"answer": "God & Small Pierre", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/dummies.jpg' />",
+            "flashCardBack": "Brood",
+            "flashCardFlipped": false,
+            "questionText": "Op basis waarvan werd in de oudheid het eerste bier gemaakt?",
+            "answers": [
+                {"answer": "Honing", "correct": false, "selected": false},
+                {"answer": "Rijst", "correct": false, "selected": false},
+                {"answer": "Brood", "correct": true, "selected": false},
+                {"answer": "Appels", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/python.jpg' />",
+            "flashCardBack": "Monty Python",
+            "flashCardFlipped": false,
+            "questionText": "Van wie is de Philospher’s Drinking Song waarin grote filosofen als Plato, Nietsche en Heidegger als alcoholici worden opgevoerd?",
+            "answers": [
+                {"answer": "Oasis", "correct": false, "selected": false},
+                {"answer": "Black Sabbath", "correct": false, "selected": false},
+                {"answer": "Joe Cocker", "correct": false, "selected": false},
+                {"answer": "Monty Python", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/trapist2.jpg' />",
+            "flashCardBack": "Maredsous",
+            "flashCardFlipped": false,
+            "questionText": "Welk bier is geen trappistenbier?",
+            "answers": [
+                {"answer": "Achel", "correct": false, "selected": false},
+                {"answer": "Rochefort", "correct": false, "selected": false},
+                {"answer": "Orval", "correct": false, "selected": false},
+                {"answer": "Maredsous", "correct": true, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/brouwer.jpg' />",
+            "flashCardBack": "InBev",
+            "flashCardFlipped": false,
+            "questionText": "Wie is de grootste bierbrouwer (in volume) ter wereld?",
+            "answers": [
+                {"answer": "InBev", "correct": true, "selected": false},
+                {"answer": "Anheuser-Busch", "correct": false, "selected": false},
+                {"answer": "SABMiller", "correct": false, "selected": false},
+                {"answer": "Heineken", "correct": false, "selected": false}
+            ]
+        },
+        {
+            "flashCardFront": "<img src='assets/imgs/obama.jpg' />",
+            "flashCardBack": "betrunken",
+            "flashCardFlipped": false,
+            "questionText": "Wat is “dronken” in het Duits?",
+            "answers": [
+                {"answer": "betrunken", "correct": true, "selected": false},
+                {"answer": "bezauft", "correct": false, "selected": false},
+                {"answer": "hipsch", "correct": false, "selected": false},
+                {"answer": "er bestaat geen Duits woord voor", "correct": false, "selected": false}
+            ]
+        }
+ 
+    ]
+}

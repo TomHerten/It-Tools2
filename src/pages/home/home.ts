@@ -7,7 +7,8 @@ import { Http } from '@angular/http';
 import { Geolocation } from '@ionic-native/geolocation';
 import { Screenshot } from '@ionic-native/screenshot';
 import 'rxjs/add/operator/map';
-import { ConnectivityProvider } from '../../providers/connectivity/connectivity';
+import { QuizPage } from '../quiz/quiz';
+//import { ConnectivityProvider } from '../../providers/connectivity/connectivity';
  
 declare var google;
  
@@ -21,11 +22,13 @@ export class HomePage {
   map: any;
   screen: any;
   state: boolean = false;
-  mapInitialised: boolean = false;
-  apiKey: 'AIzaSyDfntxed5e4_Rj3EKUkn4BfVM3OCRw_SK0';
+  //mapInitialised: boolean = false;
+  //apiKey: 'AIzaSyDfntxed5e4_Rj3EKUkn4BfVM3OCRw_SK0';
  
   constructor(public navCtrl: NavController, public authData: AuthProvider, public geolocation: Geolocation, 
-    public http: Http, private screenshot: Screenshot, private connectivityService: ConnectivityProvider) {
+    public http: Http, private screenshot: Screenshot, 
+    //private connectivityService: ConnectivityProvider
+  ) {
  
   }
 
@@ -58,6 +61,12 @@ export class HomePage {
   listPage(){
 
     this.navCtrl.push(ListPage);  
+
+  }
+
+  quizPage(){
+
+    this.navCtrl.push(QuizPage);  
 
   }
  
@@ -141,7 +150,7 @@ export class HomePage {
 
   }
 
-  loadGoogleMaps(){
+/*   loadGoogleMaps(){
   
       this.addConnectivityListeners();
   
@@ -243,6 +252,6 @@ export class HomePage {
       document.addEventListener('online', onOnline, false);
       document.addEventListener('offline', onOffline, false);
   
-    }
+    } */
   
 }

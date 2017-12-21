@@ -15,9 +15,13 @@ import { Vibration } from '@ionic-native/vibration';
 import { Screenshot } from '@ionic-native/screenshot';
 import { Geolocation } from '@ionic-native/geolocation';
 import { HttpModule } from '@angular/http';
+import { NativeAudio } from '@ionic-native/native-audio';
 import { ListPage } from '../pages/list/list';
+import { QuizPage } from '../pages/quiz/quiz';
 import { LocationsProvider } from '../providers/locations/locations';
 import { ConnectivityProvider } from '../providers/connectivity/connectivity';
+import { FlashCardComponent } from '../components/flash-card/flash-card';
+import { Data } from '../providers/data/data';
 
 // Importing AF2 Module
 
@@ -41,7 +45,9 @@ const firebaseConfig = {
     LoginPage,
     SignupPage,
     ResetPasswordPage,
-    ListPage
+    ListPage,
+    QuizPage,
+    FlashCardComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +63,8 @@ const firebaseConfig = {
     LoginPage,
     SignupPage,
     ResetPasswordPage,
-    ListPage
+    ListPage,
+    QuizPage
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler},
@@ -68,7 +75,9 @@ const firebaseConfig = {
     Geolocation,
     Screenshot,
     LocationsProvider, 
-    ConnectivityProvider
+    ConnectivityProvider,
+    Data,
+    NativeAudio
   ]
 })
 export class AppModule {}
